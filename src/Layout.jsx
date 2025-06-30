@@ -11,10 +11,15 @@ export default function Layout({ children }) {
           <Link to="/contactus">Contact</Link>
           <Link to="/login">Login</Link>
           <Link to="/categories/123">Category</Link>
+          <Link to="/en/category/pagetitle">Dynamic</Link>
         </nav>
       </header>
 
-      <main className="main-content">{children}</main>
+      <main className="main-content">
+        <div className="container">
+          {children}
+        </div>
+      </main>
 
       <footer className="app-footer">
         <p>© 2025 Noor Dev Labs. All rights reserved.</p>
