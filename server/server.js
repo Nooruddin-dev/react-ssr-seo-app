@@ -92,7 +92,7 @@ app.get("*", async (req, res) => {
   // ✅ Always try to send HTML
   try {
     let html = fs.readFileSync(INDEX_FILE, "utf8");
-    html = html.replace("{{meta}}", meta);
+    html = html.replace("<!--SSR_META_TAGS-->", meta);
     res.send(html);
   } catch (readErr) {
     console.error("❌ Failed to read HTML file:", readErr.message);
