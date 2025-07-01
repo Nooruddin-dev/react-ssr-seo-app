@@ -11,7 +11,7 @@ export default function Layout({ children }) {
           <Link to="/contactus">Contact</Link>
           <Link to="/login">Login</Link>
           <Link to="/categories/123">Category</Link>
-          <Link to="/en/category/pagetitle">Dynamic</Link>
+          <Link to="/en/macroeconomic-data/domestic-product">Dynamic</Link>
         </nav>
       </header>
 
