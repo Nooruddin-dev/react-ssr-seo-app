@@ -26,7 +26,7 @@ export async function generateMetaTags(req) {
             meta = buildMetaTags({
                 title: "React SEO App | Home",
                 desc: "Build SEO-friendly React applications with server-side rendering and dynamic meta tags support.",
-                image: "https://argaamplus.s3.amazonaws.com/020da9cd-a3bd-4e8a-a29d-5a0a05d19267.png",
+                image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?fit=crop&w=1200&q=80",
                 url: `${fullUrl}`,
             });
 
@@ -57,7 +57,9 @@ export async function generateMetaTags(req) {
 
         } else if (match) {
             const lang = match[1];
-            const apiUrl = `https://test_test/api/v1/json/macro/ui/get-seo-page-info/125`;
+
+            //--you have to place your api url here if getting data dynamically from any API
+            const apiUrl = `https://test_test/api/v1/json/test/ui/get-seo-page-info/125`;
 
             try {
                 const response = await axios.get(apiUrl);

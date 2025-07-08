@@ -11,7 +11,7 @@ export default function Layout({ children }) {
           <Link to="/contactus">Contact</Link>
           <Link to="/login">Login</Link>
           <Link to="/categories/123">Category</Link>
-          <Link to="/en/macroeconomic-data/domestic-product">Dynamic</Link>
+          <Link to="/en/category/category-seo-name">Dynamic</Link>
         </nav>
       </header>
 
@@ -22,7 +22,7 @@ export default function Layout({ children }) {
       </main>
 
       <footer className="app-footer">
-        <p>© 2025 Noor Dev Labs. All rights reserved.</p>
+        <p>© 2025 Noor Dev. All rights reserved.</p>
       </footer>
     </div>
   );
